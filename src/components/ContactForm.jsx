@@ -4,13 +4,15 @@ import React, { useState } from 'react'
 
 const INITIAL_VALUE = {
     name: '',
-    email: ''
+    email: '',
+    group: ''
 }
 
 function ContactForm({getContacts}) {
 
     const [values, setValues] = useState({ ...INITIAL_VALUE });
-    const { name, email } = values;
+    const { name, email, group } = values;
+    
 
     const handelSubmit = (e) => {
         e.preventDefault();
@@ -36,6 +38,17 @@ function ContactForm({getContacts}) {
                     <label htmlFor="email">Email</label>
                     <input type="email" id='email' name='email' value={email} onChange={handelOnChange} />
                 </div>
+                <div>
+                    <label htmlFor="group">Group</label>
+                    <select name="group" id="group" value={group} onChange={handelOnChange} >
+                        <option value="">Select group</option>
+                        <option value="home">Home</option>
+                        <option value="office">Office</option>
+                    </select>
+                </div>
+
+                
+
                 <input type="submit" value="Create New Contact" />
             </div>
 
