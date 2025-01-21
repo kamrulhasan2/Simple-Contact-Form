@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className='container'>
-      <h2>Contact From</h2>
+      <h2 className='heading'>Contact Form</h2>
       <ContactForm getContacts={getContacts}/>
       <Table contacts={contacts} />
     </div>

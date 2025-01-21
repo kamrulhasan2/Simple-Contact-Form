@@ -4,10 +4,66 @@
   padding: 2rem;
   /* text-align: center; */
 }
+body{
+  background: #ebeaea;
 
+}
+.heading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+
+.inputFild label{
+  margin-right: 1rem;
+  font-weight: 500;
+}
+.group-select label{
+  margin-right: 5rem;
+  font-weight: 500;
+}
+.submitBtn{
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 60%;
+  padding: 0.2rem;
+  background: #7ea9ce;
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.filter-section{
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.filter-section label{
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 0.4rem;
+}
+
+.user-info-section h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.user-info-section table tr td{
+  color: #376084;
+  font-size: 0.8rem;
+  border: 1px solid #7ea9ce;
+  padding: 0.4rem;
 }
